@@ -16,6 +16,8 @@
       <FILE id="hqN7at" name="DelayProcessor.h" compile="0" resource="0"
             file="Source/DelayProcessor.h"/>
     </GROUP>
+    <FILE id="CqFw5n" name="AirDelayLogo.png" compile="0" resource="1"
+          file="Source/AirDelayLogo.png"/>
   </MAINGROUP>
   <MODULES>
     <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>

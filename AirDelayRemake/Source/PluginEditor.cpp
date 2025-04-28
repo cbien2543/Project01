@@ -8,6 +8,8 @@
 
 #include "PluginProcessor.h"
 #include "PluginEditor.h"
+#include <juce_dsp/juce_dsp.h>
+
 
 //==============================================================================
 AirDelayRemakeAudioProcessorEditor::AirDelayRemakeAudioProcessorEditor (AirDelayRemakeAudioProcessor& p)
@@ -28,6 +30,7 @@ AirDelayRemakeAudioProcessorEditor::~AirDelayRemakeAudioProcessorEditor()
 void AirDelayRemakeAudioProcessorEditor::setupKnobs()
 {
     
+        // Mix Knob
         mixKnob.onValueChange = [this]() {
         audioProcessor.mix = mixKnob.getValue();
         };
@@ -49,16 +52,6 @@ void AirDelayRemakeAudioProcessorEditor::setupKnobs()
             audioProcessor.delayEffectProcessor.setDelaySamples(static_cast<int>(delayTimeKnob.getValue()));
         };
         addAndMakeVisible(delayTimeKnob);
-
-        hpfKnob.onValueChange = [this]() {
-            audioProcessor.hpfCutoff = hpfKnob.getValue();
-            audioProcessor.updateFilters();
-        };
-
-        lpfKnob.onValueChange = [this]() {
-            audioProcessor.lpfCutoff = lpfKnob.getValue();
-            audioProcessor.updateFilters();
-        };
     
         // Setup Labels
         feedbackLabel.setText("Feedback", juce::dontSendNotification);
@@ -87,6 +80,20 @@ void AirDelayRemakeAudioProcessorEditor::setupKnobs()
         addAndMakeVisible(lpfKnob);
         lpfLabel.setText("LPF", juce::dontSendNotification);
         addAndMakeVisible(lpfLabel);
+    
+        // Randomizer
+        randomizeButton.setButtonText("Randomize");
+        randomizeButton.onClick = [this]()
+        {
+        // Randomize all knob values
+        feedbackKnob.setValue(juce::Random::getSystemRandom().nextFloat());
+        delayTimeKnob.setValue(juce::Random::getSystemRandom().nextInt(48000)); // max delay samples
+        mixKnob.setValue(juce::Random::getSystemRandom().nextFloat());
+        hpfKnob.setValue(juce::Random::getSystemRandom().nextFloat() * (20000.0f - 20.0f) + 20.0f);
+        lpfKnob.setValue(juce::Random::getSystemRandom().nextFloat() * (20000.0f - 20.0f) + 20.0f);
+    };
+
+    addAndMakeVisible(randomizeButton);
 
     }
     
@@ -115,6 +122,16 @@ void AirDelayRemakeAudioProcessorEditor::setupKnobs()
         g.setColour(juce::Colours::grey.withAlpha(0.3f));
         g.drawLine(20.0f, (float) dividerY, (float) getWidth() - 20.0f, (float) dividerY, 1.0f);
         
+        // Draw AirDelay Logo below knobs
+            if (airDelayLogo.isValid())
+            {
+                int logoWidth = 200;
+                int logoHeight = 80;
+                int logoX = (getWidth() - logoWidth) / 2;
+                int logoY = dividerY + 100; // adjust depending on how much gap you want
+
+                g.drawImage(airDelayLogo, logoX, logoY, logoWidth, logoHeight, 0, 0, airDelayLogo.getWidth(), airDelayLogo.getHeight());
+            }
     }
 
     void AirDelayRemakeAudioProcessorEditor::resized()
@@ -158,4 +175,9 @@ void AirDelayRemakeAudioProcessorEditor::setupKnobs()
         lpfLabel.setBounds(x, y + knobHeight, knobWidth, labelHeight);
 
         x += knobWidth + paddingX;
+        
+        randomizeButton.setBounds(x, y + (knobHeight / 2) - 15, 120, 30); // 120px wide, centered vertically
+        
+        //Image
+        airDelayLogo = juce::ImageCache::getFromMemory(BinaryData::AirDelayLogo_png, BinaryData::AirDelayLogo_pngSize);
     }

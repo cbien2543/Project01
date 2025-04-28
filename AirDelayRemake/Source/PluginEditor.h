@@ -37,6 +37,9 @@ private:
     juce::Slider modDepthKnob;
     juce::Slider modRateKnob;
     
+    //Buttons
+    juce::TextButton randomizeButton;
+    
     // Label
     juce::Label feedbackLabel;
     juce::Label delayTimeLabel;
@@ -45,6 +48,9 @@ private:
     juce::Label lpfLabel;
     juce::Label modDepthLabel;
     juce::Label modRateLabel;
+    
+    //Logo
+    juce::Image airDelayLogo;
     
     // Link
     void setupKnobs();

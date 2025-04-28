@@ -58,17 +58,13 @@ public:
     DelayEffectProcessor delayEffectProcessor;
     
     float mix = 0.5f;
-//    
-//    juce::dsp::IIR::Filter<float> hpf;
-//    juce::dsp::IIR::Filter<float> lpf;
     
     void updateFilters();
     float hpfCutoff = 20.0f; // Hz
     float lpfCutoff = 20000.0f; // Hz
-    
+
 private:
     
-
     
     //==============================================================================
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (AirDelayRemakeAudioProcessor)
