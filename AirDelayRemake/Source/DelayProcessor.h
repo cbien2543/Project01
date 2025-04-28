@@ -20,15 +20,6 @@ class DelayEffectProcessor{
         buffer.resize(delaySamples, 0.0f);
     }
 
-    void prepare(double sampleRate) {
-            // Store sample rate for time-based calculations if needed
-        currentSampleRate = sampleRate;
-            // Reset buffer to avoid artifacts
-        std::fill(buffer.begin(), buffer.end(), 0.0f);
-        readIndex = 0;
-        writeIndex = 0;
-        }
-    
     void setFeedback(float newFeedback)
     {
         feedback = newFeedback;
@@ -36,32 +27,35 @@ class DelayEffectProcessor{
 
     float processSample(float x)
     {
-        // Smooth delay time changes
-        if (currentDelaySamples != targetDelaySamples) {
-            currentDelaySamples = static_cast<int>(currentDelaySamples * smoothingAlpha +
-                                                 targetDelaySamples * (1.0f - smoothingAlpha));
-            if (abs(currentDelaySamples - targetDelaySamples) < 1) {
-                currentDelaySamples = targetDelaySamples;
-            }
-            readIndex = (writeIndex - currentDelaySamples + buffer.size()) % buffer.size();
-        }
-        
         float delayedSample = buffer[readIndex];
         float output = x + delayedSample * feedback;
         
         buffer[writeIndex] = x + delayedSample * feedback;
         
-        readIndex = (readIndex + 1) % buffer.size();
-        writeIndex = (writeIndex + 1) % buffer.size();
+        readIndex = (readIndex + 1) % delaySamples;
+        writeIndex = (writeIndex + 1) % delaySamples;
         
         return output;
     }
 
     void setDelaySamples(int newDelaySamples) {
-        targetDelaySamples = newDelaySamples;
-        // Still resize immediately but we'll smooth the transition
-        if (newDelaySamples > buffer.size()) {
-            buffer.resize(newDelaySamples, 0.0f);
+        if (newDelaySamples != delaySamples)
+        {
+            // Only resize if needed
+            if (newDelaySamples > delaySamples)
+            {
+                // Fill new samples with 0
+                buffer.resize(newDelaySamples, 0.0f);
+            }
+            else
+            {
+                
+                readIndex = readIndex % newDelaySamples;
+                writeIndex = writeIndex % newDelaySamples;
+                buffer.resize(newDelaySamples);
+            }
+
+            delaySamples = newDelaySamples;
         }
     }
         
@@ -75,5 +69,4 @@ private:
     float feedback;
     int readIndex = 0;
     int writeIndex = 0;
-    double currentSampleRate = 44100.0; // Default
 };

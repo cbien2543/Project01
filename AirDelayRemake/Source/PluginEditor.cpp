@@ -68,18 +68,34 @@ void AirDelayRemakeAudioProcessorEditor::setupKnobs()
         addAndMakeVisible(mixLabel);
 
         // HPF Knob
-        hpfKnob.setSliderStyle(juce::Slider::Rotary);
-        hpfKnob.setRange(20.0, 20000.0, 1.0);
-        addAndMakeVisible(hpfKnob);
-        hpfLabel.setText("HPF", juce::dontSendNotification);
-        addAndMakeVisible(hpfLabel);
+        hpfKnob .setSliderStyle (juce::Slider::Rotary);
+        hpfKnob .setRange       (20.0, 20000.0, 1.0);
+        hpfKnob .setValue       (audioProcessor.hpfCutoff);
+    
+        hpfKnob.onValueChange = [this]()
+        {
+        audioProcessor.hpfCutoff = hpfKnob.getValue();
+        audioProcessor.updateFilters();
+        };
+    
+        addAndMakeVisible (hpfKnob);
+        hpfLabel.setText ("HPF", juce::dontSendNotification);
+        addAndMakeVisible (hpfLabel);
 
         // LPF Knob
-        lpfKnob.setSliderStyle(juce::Slider::Rotary);
-        lpfKnob.setRange(20.0, 20000.0, 1.0);
-        addAndMakeVisible(lpfKnob);
-        lpfLabel.setText("LPF", juce::dontSendNotification);
-        addAndMakeVisible(lpfLabel);
+        lpfKnob .setSliderStyle (juce::Slider::Rotary);
+        lpfKnob .setRange       (20.0, 20000.0, 1.0);
+        lpfKnob .setValue       (audioProcessor.lpfCutoff);
+        lpfKnob.onValueChange = [this]()
+    
+        {
+        audioProcessor.lpfCutoff = lpfKnob.getValue();
+        audioProcessor.updateFilters();
+        };
+    
+        addAndMakeVisible (lpfKnob);
+        lpfLabel.setText ("LPF", juce::dontSendNotification);
+        addAndMakeVisible (lpfLabel);
     
         // Randomizer
         randomizeButton.setButtonText("Randomize");
@@ -91,9 +107,19 @@ void AirDelayRemakeAudioProcessorEditor::setupKnobs()
         mixKnob.setValue(juce::Random::getSystemRandom().nextFloat());
         hpfKnob.setValue(juce::Random::getSystemRandom().nextFloat() * (20000.0f - 20.0f) + 20.0f);
         lpfKnob.setValue(juce::Random::getSystemRandom().nextFloat() * (20000.0f - 20.0f) + 20.0f);
-    };
+        };
 
+        // Bypass Button
+        bypassButton.setButtonText("Bypass");
+        bypassButton.onClick = [this]()
+        {
+            audioProcessor.bypass = bypassButton.getToggleState();
+        };
+    
+    addAndMakeVisible(bypassButton);
+    
     addAndMakeVisible(randomizeButton);
+    
 
     }
     
@@ -178,6 +204,11 @@ void AirDelayRemakeAudioProcessorEditor::setupKnobs()
         
         randomizeButton.setBounds(x, y + (knobHeight / 2) - 15, 120, 30); // 120px wide, centered vertically
         
+        // Bypass
+        bypassButton.setBounds(400, 20, 80, 30);
+        
         //Image
         airDelayLogo = juce::ImageCache::getFromMemory(BinaryData::AirDelayLogo_png, BinaryData::AirDelayLogo_pngSize);
+        
+        
     }

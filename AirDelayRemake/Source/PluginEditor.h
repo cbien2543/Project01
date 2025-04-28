@@ -11,6 +11,7 @@
 #include <JuceHeader.h>
 #include "PluginProcessor.h"
 
+
 //==============================================================================
 
 class AirDelayRemakeAudioProcessorEditor  : public juce::AudioProcessorEditor
@@ -22,6 +23,7 @@ public:
     //==============================================================================
     void paint (juce::Graphics&) override;
     void resized() override;
+    
 
 private:
     // This reference is provided as a quick way for your editor to
@@ -39,6 +41,7 @@ private:
     
     //Buttons
     juce::TextButton randomizeButton;
+    juce::ToggleButton bypassButton;
     
     // Label
     juce::Label feedbackLabel;
@@ -48,6 +51,7 @@ private:
     juce::Label lpfLabel;
     juce::Label modDepthLabel;
     juce::Label modRateLabel;
+    
     
     //Logo
     juce::Image airDelayLogo;

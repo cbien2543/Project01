@@ -62,6 +62,11 @@ public:
     void updateFilters();
     float hpfCutoff = 20.0f; // Hz
     float lpfCutoff = 20000.0f; // Hz
+    
+    juce::dsp::IIR::Filter<float> hpf;
+    juce::dsp::IIR::Filter<float> lpf;
+    
+    bool bypass = false;
 
 private:
     

@@ -100,6 +100,12 @@ void AirDelayRemakeAudioProcessor::prepareToPlay (double sampleRate, int samples
     spec.maximumBlockSize = samplesPerBlock;
     spec.numChannels = getTotalNumInputChannels();
         
+    hpf.prepare(spec);
+    lpf.prepare(spec);
+    
+    hpf.reset();
+    lpf.reset();
+
     updateFilters();
 }
 
@@ -139,26 +145,33 @@ void AirDelayRemakeAudioProcessor::processBlock (juce::AudioBuffer<float>& buffe
 {
     juce::ScopedNoDenormals noDenormals;
     auto totalNumInputChannels  = getTotalNumInputChannels();
-        auto totalNumOutputChannels = getTotalNumOutputChannels();
+    auto totalNumOutputChannels = getTotalNumOutputChannels();
 
-        for (auto i = totalNumInputChannels; i < totalNumOutputChannels; ++i)
-            buffer.clear (i, 0, buffer.getNumSamples());
+    for (auto i = totalNumInputChannels; i < totalNumOutputChannels; ++i)
+        buffer.clear (i, 0, buffer.getNumSamples());
 
-        juce::dsp::AudioBlock<float> block(buffer);
-        juce::dsp::ProcessContextReplacing<float> context(block);
+    if (bypass)
+        return; // Skip processing entirely
 
-        for (int channel = 0; channel < totalNumInputChannels; ++channel)
+    juce::dsp::AudioBlock<float> block(buffer);
+    juce::dsp::ProcessContextReplacing<float> context(block);
+
+    for (int channel = 0; channel < totalNumInputChannels; ++channel)
+    {
+        auto* channelData = buffer.getWritePointer(channel);
+        for (int sample = 0; sample < buffer.getNumSamples(); ++sample)
         {
-            auto* channelData = buffer.getWritePointer(channel);
+            float dry = channelData[sample];
 
-            for (int sample = 0; sample < buffer.getNumSamples(); ++sample)
-            {
-                float dry = channelData[sample];
-                float wet = delayEffectProcessor.processSample(dry);
-                channelData[sample] = (1.0f - mix) * dry + mix * wet;
-            }
+            dry = hpf.processSample(dry);
+            dry = lpf.processSample(dry);
+
+            float wet = delayEffectProcessor.processSample(dry);
+            
+            channelData[sample] = (1.0f - mix) * dry + mix * wet;
         }
     }
+}
 
 
 //==============================================================================
@@ -188,7 +201,8 @@ void AirDelayRemakeAudioProcessor::setStateInformation (const void* data, int si
 
 void AirDelayRemakeAudioProcessor::updateFilters()
 {
-    
+    *hpf.coefficients = *juce::dsp::IIR::Coefficients<float>::makeHighPass(getSampleRate(), hpfCutoff);
+    *lpf.coefficients = *juce::dsp::IIR::Coefficients<float>::makeLowPass(getSampleRate(), lpfCutoff);
 }
 
 //==============================================================================
