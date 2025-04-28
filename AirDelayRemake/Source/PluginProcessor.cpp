@@ -103,10 +103,12 @@ void AirDelayRemakeAudioProcessor::prepareToPlay (double sampleRate, int samples
     hpf.prepare(spec);
     lpf.prepare(spec);
     
-    hpf.reset();
-    lpf.reset();
-
-    updateFilters();
+    mix.reset(sampleRate);
+    hpfCutoff.reset(sampleRate, 0.02);
+    lpfCutoff.reset(sampleRate, 0.02);
+    
+//    updateFilters();
+    
 }
 
 void AirDelayRemakeAudioProcessor::releaseResources()
@@ -155,20 +157,35 @@ void AirDelayRemakeAudioProcessor::processBlock (juce::AudioBuffer<float>& buffe
 
     juce::dsp::AudioBlock<float> block(buffer);
     juce::dsp::ProcessContextReplacing<float> context(block);
+    
+    // Update filter cutoffs
+    updateFilters();
+
 
     for (int channel = 0; channel < totalNumInputChannels; ++channel)
     {
         auto* channelData = buffer.getWritePointer(channel);
+
         for (int sample = 0; sample < buffer.getNumSamples(); ++sample)
         {
             float dry = channelData[sample];
 
-            dry = hpf.processSample(dry);
-            dry = lpf.processSample(dry);
+            if (enableHPF)
+                dry = hpf.processSample(dry);
+
+            if (enableLPF)
+                dry = lpf.processSample(dry);
 
             float wet = delayEffectProcessor.processSample(dry);
-            
-            channelData[sample] = (1.0f - mix) * dry + mix * wet;
+
+            float mixValue = mix.getNextValue(); 
+            float outputSample = (1.0f - mixValue) * dry + mixValue * wet;
+
+            // Kill denormals
+            if (std::abs(outputSample) < 1.0e-15f)
+                outputSample = 0.0f;
+
+            channelData[sample] = outputSample;
         }
     }
 }
@@ -177,7 +194,7 @@ void AirDelayRemakeAudioProcessor::processBlock (juce::AudioBuffer<float>& buffe
 //==============================================================================
 bool AirDelayRemakeAudioProcessor::hasEditor() const
 {
-    return true; // (change this to false if you choose to not supply an editor)
+    return true; 
 }
 
 juce::AudioProcessorEditor* AirDelayRemakeAudioProcessor::createEditor()
@@ -201,8 +218,8 @@ void AirDelayRemakeAudioProcessor::setStateInformation (const void* data, int si
 
 void AirDelayRemakeAudioProcessor::updateFilters()
 {
-    *hpf.coefficients = *juce::dsp::IIR::Coefficients<float>::makeHighPass(getSampleRate(), hpfCutoff);
-    *lpf.coefficients = *juce::dsp::IIR::Coefficients<float>::makeLowPass(getSampleRate(), lpfCutoff);
+    *hpf.coefficients = *juce::dsp::IIR::Coefficients<float>::makeHighPass(getSampleRate(), hpfCutoff.getNextValue());
+    *lpf.coefficients = *juce::dsp::IIR::Coefficients<float>::makeLowPass(getSampleRate(), lpfCutoff.getNextValue());
 }
 
 //==============================================================================

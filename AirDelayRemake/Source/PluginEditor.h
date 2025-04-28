@@ -42,6 +42,8 @@ private:
     //Buttons
     juce::TextButton randomizeButton;
     juce::ToggleButton bypassButton;
+    juce::ToggleButton hpfToggle;
+    juce::ToggleButton lpfToggle;
     
     // Label
     juce::Label feedbackLabel;

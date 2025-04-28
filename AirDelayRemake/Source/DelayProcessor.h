@@ -41,7 +41,7 @@ class DelayEffectProcessor{
     void setDelaySamples(int newDelaySamples) {
         if (newDelaySamples != delaySamples)
         {
-            // Only resize if needed
+            // Resize if needed
             if (newDelaySamples > delaySamples)
             {
                 // Fill new samples with 0

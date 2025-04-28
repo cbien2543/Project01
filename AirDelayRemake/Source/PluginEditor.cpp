@@ -15,9 +15,8 @@
 AirDelayRemakeAudioProcessorEditor::AirDelayRemakeAudioProcessorEditor (AirDelayRemakeAudioProcessor& p)
     : AudioProcessorEditor (&p), audioProcessor (p)
 {
-    // Make sure that before the constructor has finished, you've set the
-    // editor's size to whatever you need it to be.
-    setSize(500, 500);
+
+    setSize(500, 380);
 
     setupKnobs();
 }
@@ -46,7 +45,7 @@ void AirDelayRemakeAudioProcessorEditor::setupKnobs()
 
         // Setup Delay Knob
         delayTimeKnob.setSliderStyle(juce::Slider::Rotary);
-        delayTimeKnob.setRange(1, 48000, 1); // 1 second max delay for now
+        delayTimeKnob.setRange(1, 48000, 1); // 1 second delay
         delayTimeKnob.setValue(audioProcessor.delayEffectProcessor.getDelaySamples());
         delayTimeKnob.onValueChange = [this]() {
             audioProcessor.delayEffectProcessor.setDelaySamples(static_cast<int>(delayTimeKnob.getValue()));
@@ -68,31 +67,27 @@ void AirDelayRemakeAudioProcessorEditor::setupKnobs()
         addAndMakeVisible(mixLabel);
 
         // HPF Knob
-        hpfKnob .setSliderStyle (juce::Slider::Rotary);
-        hpfKnob .setRange       (20.0, 20000.0, 1.0);
-        hpfKnob .setValue       (audioProcessor.hpfCutoff);
-    
+        hpfKnob.setSliderStyle (juce::Slider::Rotary);
+        hpfKnob.setRange(20.0, 20000.0, 1.0);
+        hpfKnob.setValue(audioProcessor.hpfCutoff.getCurrentValue());
         hpfKnob.onValueChange = [this]()
         {
         audioProcessor.hpfCutoff = hpfKnob.getValue();
         audioProcessor.updateFilters();
         };
-    
         addAndMakeVisible (hpfKnob);
         hpfLabel.setText ("HPF", juce::dontSendNotification);
         addAndMakeVisible (hpfLabel);
 
         // LPF Knob
-        lpfKnob .setSliderStyle (juce::Slider::Rotary);
-        lpfKnob .setRange       (20.0, 20000.0, 1.0);
-        lpfKnob .setValue       (audioProcessor.lpfCutoff);
+        lpfKnob.setSliderStyle (juce::Slider::Rotary);
+        lpfKnob.setRange(20.0, 20000.0, 1.0);
+        lpfKnob.setValue(audioProcessor.lpfCutoff.getCurrentValue());
         lpfKnob.onValueChange = [this]()
-    
         {
         audioProcessor.lpfCutoff = lpfKnob.getValue();
         audioProcessor.updateFilters();
         };
-    
         addAndMakeVisible (lpfKnob);
         lpfLabel.setText ("LPF", juce::dontSendNotification);
         addAndMakeVisible (lpfLabel);
@@ -103,7 +98,7 @@ void AirDelayRemakeAudioProcessorEditor::setupKnobs()
         {
         // Randomize all knob values
         feedbackKnob.setValue(juce::Random::getSystemRandom().nextFloat());
-        delayTimeKnob.setValue(juce::Random::getSystemRandom().nextInt(48000)); // max delay samples
+        delayTimeKnob.setValue(juce::Random::getSystemRandom().nextInt(48000)); // max samples
         mixKnob.setValue(juce::Random::getSystemRandom().nextFloat());
         hpfKnob.setValue(juce::Random::getSystemRandom().nextFloat() * (20000.0f - 20.0f) + 20.0f);
         lpfKnob.setValue(juce::Random::getSystemRandom().nextFloat() * (20000.0f - 20.0f) + 20.0f);
@@ -115,6 +110,25 @@ void AirDelayRemakeAudioProcessorEditor::setupKnobs()
         {
             audioProcessor.bypass = bypassButton.getToggleState();
         };
+        // HPF Toggle
+        hpfToggle.setButtonText("Enable");
+        hpfToggle.setToggleState(audioProcessor.enableHPF, juce::dontSendNotification);
+        hpfToggle.onClick = [this]()
+        {
+            audioProcessor.enableHPF = hpfToggle.getToggleState();
+        };
+
+        // LPF Toggle
+        lpfToggle.setButtonText("Enable");
+        lpfToggle.setToggleState(audioProcessor.enableLPF, juce::dontSendNotification);
+        lpfToggle.onClick = [this]()
+        {
+            audioProcessor.enableLPF = lpfToggle.getToggleState();
+        };
+    
+    addAndMakeVisible(hpfToggle);
+    
+    addAndMakeVisible(lpfToggle);
     
     addAndMakeVisible(bypassButton);
     
@@ -123,15 +137,14 @@ void AirDelayRemakeAudioProcessorEditor::setupKnobs()
 
     }
     
-
     void AirDelayRemakeAudioProcessorEditor::paint(juce::Graphics& g)
     {
         
         // Gradient background
         juce::ColourGradient gradient(
-            juce::Colours::darkslategrey,  // start color (top)
+            juce::Colours::darkslategrey,
             0, 0,
-            juce::Colours::black,           // end color (bottom)
+            juce::Colours::black,
             0, (float) getHeight(),
             false
         );
@@ -144,17 +157,17 @@ void AirDelayRemakeAudioProcessorEditor::setupKnobs()
         g.drawRoundedRectangle(getLocalBounds().toFloat().reduced(5.0f), 10.0f, 2.0f);
 
         // Divider line between top and bottom rows
-        int dividerY = 240; // adjust depending on knob size
+        int dividerY = 150;
         g.setColour(juce::Colours::grey.withAlpha(0.3f));
         g.drawLine(20.0f, (float) dividerY, (float) getWidth() - 20.0f, (float) dividerY, 1.0f);
         
-        // Draw AirDelay Logo below knobs
+        // Draw AirDelay Logo
             if (airDelayLogo.isValid())
             {
-                int logoWidth = 200;
-                int logoHeight = 80;
+                int logoWidth = 500;
+                int logoHeight = 120;
                 int logoX = (getWidth() - logoWidth) / 2;
-                int logoY = dividerY + 100; // adjust depending on how much gap you want
+                int logoY = dividerY + 110; // How much gap you want
 
                 g.drawImage(airDelayLogo, logoX, logoY, logoWidth, logoHeight, 0, 0, airDelayLogo.getWidth(), airDelayLogo.getHeight());
             }
@@ -176,36 +189,39 @@ void AirDelayRemakeAudioProcessorEditor::setupKnobs()
 
         // Top row: Delay, Feedback, Mix
         delayTimeKnob.setBounds(x, y, knobWidth, knobHeight);
-        delayTimeLabel.setBounds(x, y + knobHeight, knobWidth, labelHeight);
+        delayTimeLabel.setBounds(20, -30 + knobHeight, knobWidth, labelHeight);
 
         x += knobWidth + paddingX;
 
         feedbackKnob.setBounds(x, y, knobWidth, knobHeight);
-        feedbackLabel.setBounds(x, y + knobHeight, knobWidth, labelHeight);
+        feedbackLabel.setBounds(x, -30 + knobHeight, knobWidth, labelHeight);
 
         x += knobWidth + paddingX;
 
         mixKnob.setBounds(x, y, knobWidth, knobHeight);
-        mixLabel.setBounds(x, y + knobHeight, knobWidth, labelHeight);
+        mixLabel.setBounds(x, -30 + knobHeight, knobWidth, labelHeight);
 
-        // Bottom row (beneath)
+        // Bottom row 
         x = startX;
         y += knobHeight + labelHeight + paddingY;
 
-        hpfKnob.setBounds(x, y, knobWidth, knobHeight);
-        hpfLabel.setBounds(x, y + knobHeight, knobWidth, labelHeight);
+        hpfKnob.setBounds(x, +135, knobWidth, knobHeight);
+        hpfLabel.setBounds(x, 90 + knobHeight, knobWidth, labelHeight);
 
         x += knobWidth + paddingX;
 
-        lpfKnob.setBounds(x, y, knobWidth, knobHeight);
-        lpfLabel.setBounds(x, y + knobHeight, knobWidth, labelHeight);
+        lpfKnob.setBounds(x, +135, knobWidth, knobHeight);
+        lpfLabel.setBounds(x, 90 + knobHeight, knobWidth, labelHeight);
 
         x += knobWidth + paddingX;
         
-        randomizeButton.setBounds(x, y + (knobHeight / 2) - 15, 120, 30); // 120px wide, centered vertically
+        randomizeButton.setBounds(x, +135 + (knobHeight / 2) - 15, 120, 30); // 120px wide, centered vertically
         
         // Bypass
         bypassButton.setBounds(400, 20, 80, 30);
+        
+        hpfToggle.setBounds(50, 215, 80, 30);  // Adjust?
+        lpfToggle.setBounds(210, 215, 80, 30);
         
         //Image
         airDelayLogo = juce::ImageCache::getFromMemory(BinaryData::AirDelayLogo_png, BinaryData::AirDelayLogo_pngSize);

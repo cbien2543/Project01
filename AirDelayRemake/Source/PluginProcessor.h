@@ -57,16 +57,19 @@ public:
 
     DelayEffectProcessor delayEffectProcessor;
     
-    float mix = 0.5f;
-    
-    void updateFilters();
-    float hpfCutoff = 20.0f; // Hz
-    float lpfCutoff = 20000.0f; // Hz
+    juce::SmoothedValue<float> mix { 0.5f };
+    juce::SmoothedValue<float> hpfCutoff { 20.0f };
+    juce::SmoothedValue<float> lpfCutoff { 20000.0f };
     
     juce::dsp::IIR::Filter<float> hpf;
     juce::dsp::IIR::Filter<float> lpf;
     
     bool bypass = false;
+    
+    bool enableHPF = false;
+    bool enableLPF = false;
+    
+    void updateFilters();
 
 private:
     
