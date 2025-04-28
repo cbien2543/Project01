@@ -12,8 +12,7 @@
 #include "PluginProcessor.h"
 
 //==============================================================================
-/**
-*/
+
 class AirDelayRemakeAudioProcessorEditor  : public juce::AudioProcessorEditor
 {
 public:
@@ -28,6 +27,27 @@ private:
     // This reference is provided as a quick way for your editor to
     // access the processor object that created it.
     AirDelayRemakeAudioProcessor& audioProcessor;
+    
+    // Knobs
+    juce::Slider feedbackKnob;
+    juce::Slider delayTimeKnob;
+    juce::Slider mixKnob;
+    juce::Slider hpfKnob;
+    juce::Slider lpfKnob;
+    juce::Slider modDepthKnob;
+    juce::Slider modRateKnob;
+    
+    // Label
+    juce::Label feedbackLabel;
+    juce::Label delayTimeLabel;
+    juce::Label mixLabel;
+    juce::Label hpfLabel;
+    juce::Label lpfLabel;
+    juce::Label modDepthLabel;
+    juce::Label modRateLabel;
+    
+    // Link
+    void setupKnobs();
 
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (AirDelayRemakeAudioProcessorEditor)
 };

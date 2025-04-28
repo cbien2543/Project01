@@ -9,6 +9,8 @@
 #pragma once
 
 #include <JuceHeader.h>
+#include "DelayProcessor.h"
+#include <juce_dsp/juce_dsp.h>
 
 //==============================================================================
 /**
@@ -53,7 +55,21 @@ public:
     void getStateInformation (juce::MemoryBlock& destData) override;
     void setStateInformation (const void* data, int sizeInBytes) override;
 
+    DelayEffectProcessor delayEffectProcessor;
+    
+    float mix = 0.5f;
+//    
+//    juce::dsp::IIR::Filter<float> hpf;
+//    juce::dsp::IIR::Filter<float> lpf;
+    
+    void updateFilters();
+    float hpfCutoff = 20.0f; // Hz
+    float lpfCutoff = 20000.0f; // Hz
+    
 private:
+    
+
+    
     //==============================================================================
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (AirDelayRemakeAudioProcessor)
 };

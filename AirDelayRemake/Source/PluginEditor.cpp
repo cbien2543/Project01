@@ -15,26 +15,147 @@ AirDelayRemakeAudioProcessorEditor::AirDelayRemakeAudioProcessorEditor (AirDelay
 {
     // Make sure that before the constructor has finished, you've set the
     // editor's size to whatever you need it to be.
-    setSize (400, 300);
+    setSize(500, 500);
+
+    setupKnobs();
 }
 
 AirDelayRemakeAudioProcessorEditor::~AirDelayRemakeAudioProcessorEditor()
 {
+
 }
 
-//==============================================================================
-void AirDelayRemakeAudioProcessorEditor::paint (juce::Graphics& g)
+void AirDelayRemakeAudioProcessorEditor::setupKnobs()
 {
-    // (Our component is opaque, so we must completely fill the background with a solid colour)
-    g.fillAll (getLookAndFeel().findColour (juce::ResizableWindow::backgroundColourId));
+    
+        mixKnob.onValueChange = [this]() {
+        audioProcessor.mix = mixKnob.getValue();
+        };
+    
+        // Setup Feedback Knob
+        feedbackKnob.setSliderStyle(juce::Slider::Rotary);
+        feedbackKnob.setRange(0.0, 1.0, 0.01);
+        feedbackKnob.setValue(audioProcessor.delayEffectProcessor.getFeedback()); 
+        feedbackKnob.onValueChange = [this]() {
+            audioProcessor.delayEffectProcessor.setFeedback(feedbackKnob.getValue());
+        };
+        addAndMakeVisible(feedbackKnob);
 
-    g.setColour (juce::Colours::white);
-    g.setFont (juce::FontOptions (15.0f));
-    g.drawFittedText ("Hello World!", getLocalBounds(), juce::Justification::centred, 1);
-}
+        // Setup Delay Knob
+        delayTimeKnob.setSliderStyle(juce::Slider::Rotary);
+        delayTimeKnob.setRange(1, 48000, 1); // 1 second max delay for now
+        delayTimeKnob.setValue(audioProcessor.delayEffectProcessor.getDelaySamples());
+        delayTimeKnob.onValueChange = [this]() {
+            audioProcessor.delayEffectProcessor.setDelaySamples(static_cast<int>(delayTimeKnob.getValue()));
+        };
+        addAndMakeVisible(delayTimeKnob);
 
-void AirDelayRemakeAudioProcessorEditor::resized()
-{
-    // This is generally where you'll want to lay out the positions of any
-    // subcomponents in your editor..
-}
+        hpfKnob.onValueChange = [this]() {
+            audioProcessor.hpfCutoff = hpfKnob.getValue();
+            audioProcessor.updateFilters();
+        };
+
+        lpfKnob.onValueChange = [this]() {
+            audioProcessor.lpfCutoff = lpfKnob.getValue();
+            audioProcessor.updateFilters();
+        };
+    
+        // Setup Labels
+        feedbackLabel.setText("Feedback", juce::dontSendNotification);
+        addAndMakeVisible(feedbackLabel);
+
+        delayTimeLabel.setText("Delay", juce::dontSendNotification);
+        addAndMakeVisible(delayTimeLabel);
+    
+        // Mix Knob
+        mixKnob.setSliderStyle(juce::Slider::Rotary);
+        mixKnob.setRange(0.0, 1.0, 0.01);
+        addAndMakeVisible(mixKnob);
+        mixLabel.setText("Mix", juce::dontSendNotification);
+        addAndMakeVisible(mixLabel);
+
+        // HPF Knob
+        hpfKnob.setSliderStyle(juce::Slider::Rotary);
+        hpfKnob.setRange(20.0, 20000.0, 1.0);
+        addAndMakeVisible(hpfKnob);
+        hpfLabel.setText("HPF", juce::dontSendNotification);
+        addAndMakeVisible(hpfLabel);
+
+        // LPF Knob
+        lpfKnob.setSliderStyle(juce::Slider::Rotary);
+        lpfKnob.setRange(20.0, 20000.0, 1.0);
+        addAndMakeVisible(lpfKnob);
+        lpfLabel.setText("LPF", juce::dontSendNotification);
+        addAndMakeVisible(lpfLabel);
+
+    }
+    
+
+    void AirDelayRemakeAudioProcessorEditor::paint(juce::Graphics& g)
+    {
+        
+        // Gradient background
+        juce::ColourGradient gradient(
+            juce::Colours::darkslategrey,  // start color (top)
+            0, 0,
+            juce::Colours::black,           // end color (bottom)
+            0, (float) getHeight(),
+            false
+        );
+
+        g.setGradientFill(gradient);
+        g.fillAll();
+
+        // Draw a soft border
+        g.setColour(juce::Colours::grey.withAlpha(0.6f));
+        g.drawRoundedRectangle(getLocalBounds().toFloat().reduced(5.0f), 10.0f, 2.0f);
+
+        // Divider line between top and bottom rows
+        int dividerY = 240; // adjust depending on knob size
+        g.setColour(juce::Colours::grey.withAlpha(0.3f));
+        g.drawLine(20.0f, (float) dividerY, (float) getWidth() - 20.0f, (float) dividerY, 1.0f);
+        
+    }
+
+    void AirDelayRemakeAudioProcessorEditor::resized()
+    {
+        const int knobWidth = 130;
+        const int knobHeight = 130;
+        const int labelHeight = 20;
+        const int paddingX = 30;
+        const int paddingY = 30;
+            
+        const int startX = 20;
+        const int startY = 20;
+
+        int x = startX;
+        int y = startY;
+
+        // Top row: Delay, Feedback, Mix
+        delayTimeKnob.setBounds(x, y, knobWidth, knobHeight);
+        delayTimeLabel.setBounds(x, y + knobHeight, knobWidth, labelHeight);
+
+        x += knobWidth + paddingX;
+
+        feedbackKnob.setBounds(x, y, knobWidth, knobHeight);
+        feedbackLabel.setBounds(x, y + knobHeight, knobWidth, labelHeight);
+
+        x += knobWidth + paddingX;
+
+        mixKnob.setBounds(x, y, knobWidth, knobHeight);
+        mixLabel.setBounds(x, y + knobHeight, knobWidth, labelHeight);
+
+        // Bottom row (beneath)
+        x = startX;
+        y += knobHeight + labelHeight + paddingY;
+
+        hpfKnob.setBounds(x, y, knobWidth, knobHeight);
+        hpfLabel.setBounds(x, y + knobHeight, knobWidth, labelHeight);
+
+        x += knobWidth + paddingX;
+
+        lpfKnob.setBounds(x, y, knobWidth, knobHeight);
+        lpfLabel.setBounds(x, y + knobHeight, knobWidth, labelHeight);
+
+        x += knobWidth + paddingX;
+    }

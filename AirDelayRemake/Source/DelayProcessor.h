@@ -38,6 +38,31 @@ class DelayEffectProcessor{
         return output;
     }
 
+    void setDelaySamples(int newDelaySamples) {
+        if (newDelaySamples != delaySamples)
+        {
+            // Only resize if needed
+            if (newDelaySamples > delaySamples)
+            {
+                // Fill new samples with 0
+                buffer.resize(newDelaySamples, 0.0f);
+            }
+            else
+            {
+                
+                readIndex = readIndex % newDelaySamples;
+                writeIndex = writeIndex % newDelaySamples;
+                buffer.resize(newDelaySamples);
+            }
+
+            delaySamples = newDelaySamples;
+        }
+    }
+        
+        
+        float getFeedback() const { return feedback; }
+        int getDelaySamples() const { return delaySamples; }
+
 private:
     std::vector<float> buffer;
     int delaySamples;

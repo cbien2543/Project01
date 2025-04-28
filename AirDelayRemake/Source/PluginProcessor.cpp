@@ -8,6 +8,7 @@
 
 #include "PluginProcessor.h"
 #include "PluginEditor.h"
+#include <juce_dsp/juce_dsp.h>
 
 //==============================================================================
 AirDelayRemakeAudioProcessor::AirDelayRemakeAudioProcessor()
@@ -93,8 +94,15 @@ void AirDelayRemakeAudioProcessor::changeProgramName (int index, const juce::Str
 //==============================================================================
 void AirDelayRemakeAudioProcessor::prepareToPlay (double sampleRate, int samplesPerBlock)
 {
-    // Use this method as the place to do any pre-playback
-    // initialisation that you need..
+    juce::dsp::ProcessSpec spec;
+    spec.sampleRate = sampleRate;
+    spec.maximumBlockSize = samplesPerBlock;
+    spec.numChannels = getTotalNumInputChannels();
+
+//    hpf.prepare(spec);
+//    lpf.prepare(spec);
+
+    updateFilters();
 }
 
 void AirDelayRemakeAudioProcessor::releaseResources()
@@ -152,9 +160,19 @@ void AirDelayRemakeAudioProcessor::processBlock (juce::AudioBuffer<float>& buffe
     // interleaved by keeping the same state.
     for (int channel = 0; channel < totalNumInputChannels; ++channel)
     {
-        auto* channelData = buffer.getWritePointer (channel);
+        auto* channelData = buffer.getWritePointer(channel);
+        for (int i = 0; i < buffer.getNumSamples(); ++i)
+        {
+            float dry = channelData[i];
 
-        // ..do something to the data...
+            // Apply HPF & LPF
+//            dry = hpf.processSample(dry);
+//            dry = lpf.processSample(dry);
+
+            float wet = delayEffectProcessor.processSample(dry);
+            
+            channelData[i] = (1.0f - mix) * dry + mix * wet;
+        }
     }
 }
 
@@ -181,6 +199,15 @@ void AirDelayRemakeAudioProcessor::setStateInformation (const void* data, int si
 {
     // You should use this method to restore your parameters from this memory block,
     // whose contents will have been created by the getStateInformation() call.
+}
+
+void AirDelayRemakeAudioProcessor::updateFilters()
+{
+//    auto hpfCoefficients = juce::dsp::FilterDesign<float>::designIIRHighPassHighOrderButterworthMethod(hpfCutoff, getSampleRate(), 2);
+//    auto lpfCoefficients = juce::dsp::FilterDesign<float>::designIIRLowPassHighOrderButterworthMethod(lpfCutoff, getSampleRate(), 2);
+//
+//    hpf.coefficients = hpfCoefficients[0];
+//    lpf.coefficients = lpfCoefficients[0];
 }
 
 //==============================================================================
