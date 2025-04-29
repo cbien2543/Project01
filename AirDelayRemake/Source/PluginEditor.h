@@ -10,9 +10,11 @@
 
 #include <JuceHeader.h>
 #include "PluginProcessor.h"
+#include "KnobLookAndFeel.h"
 
 
 //==============================================================================
+
 
 class AirDelayRemakeAudioProcessorEditor  : public juce::AudioProcessorEditor
 {
@@ -54,12 +56,13 @@ private:
     juce::Label modDepthLabel;
     juce::Label modRateLabel;
     
-    
     //Logo
     juce::Image airDelayLogo;
     
     // Link
     void setupKnobs();
-
+    
+    KnobLookAndFeel knobLookAndFeel;
+    
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (AirDelayRemakeAudioProcessorEditor)
 };

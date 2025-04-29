@@ -25,18 +25,22 @@ class DelayEffectProcessor{
         feedback = newFeedback;
     }
 
-    float processSample(float x)
-    {
-        float delayedSample = buffer[readIndex];
-        float output = x + delayedSample * feedback;
-        
-        buffer[writeIndex] = x + delayedSample * feedback;
-        
-        readIndex = (readIndex + 1) % delaySamples;
-        writeIndex = (writeIndex + 1) % delaySamples;
-        
-        return output;
-    }
+       float processSample(float x)
+       {
+           // grab the old sample out of the buffer
+           float delayedSample = buffer[readIndex];
+    
+           // write the new composite back into the buffer
+           buffer[writeIndex] = x + delayedSample * feedback;
+    
+           // advance our indices
+           readIndex  = (readIndex  + 1) % delaySamples;
+           writeIndex = (writeIndex + 1) % delaySamples;
+    
+           // return **only** the wet part
+           return delayedSample * feedback;
+       }
+    
 
     void setDelaySamples(int newDelaySamples) {
         if (newDelaySamples != delaySamples)

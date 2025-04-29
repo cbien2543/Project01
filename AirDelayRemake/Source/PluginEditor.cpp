@@ -8,22 +8,26 @@
 
 #include "PluginProcessor.h"
 #include "PluginEditor.h"
+#include "KnobLookAndFeel.h"
 #include <juce_dsp/juce_dsp.h>
-
+#include "BinaryData.h"
+//using namespace juce;
 
 //==============================================================================
+
 AirDelayRemakeAudioProcessorEditor::AirDelayRemakeAudioProcessorEditor (AirDelayRemakeAudioProcessor& p)
     : AudioProcessorEditor (&p), audioProcessor (p)
 {
 
+    setLookAndFeel(&knobLookAndFeel);
+    
     setSize(500, 380);
-
     setupKnobs();
 }
 
 AirDelayRemakeAudioProcessorEditor::~AirDelayRemakeAudioProcessorEditor()
 {
-
+    setLookAndFeel(nullptr);
 }
 
 void AirDelayRemakeAudioProcessorEditor::setupKnobs()
