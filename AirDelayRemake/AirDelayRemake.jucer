@@ -4,6 +4,10 @@
               addUsingNamespaceToJuceHeader="0" jucerFormatVersion="1">
   <MAINGROUP id="N6AVEH" name="AirDelayRemake">
     <GROUP id="{0DFB9A97-7F4A-B6CE-0BA5-FB3A88BA888F}" name="Source">
+      <FILE id="Cz5ofp" name="KnobLookAndFeel.h" compile="0" resource="0"
+            file="Source/KnobLookAndFeel.h"/>
+      <FILE id="vDsHBu" name="KnobLookAndFeel.cpp" compile="1" resource="0"
+            file="Source/KnobLookAndFeel.cpp"/>
       <FILE id="jnwBPM" name="PluginProcessor.cpp" compile="1" resource="0"
             file="Source/PluginProcessor.cpp"/>
       <FILE id="yxhJER" name="PluginProcessor.h" compile="0" resource="0"
@@ -15,6 +19,1048 @@
             file="Source/DelayProcessor.cpp"/>
       <FILE id="hqN7at" name="DelayProcessor.h" compile="0" resource="0"
             file="Source/DelayProcessor.h"/>
+      <GROUP id="{DAA2C0CD-5CB7-99D2-35E5-7F4B7022582D}" name="Assets">
+        <GROUP id="{884A6991-4EDA-6941-0150-632E17B27865}" name="Animations">
+          <GROUP id="{A90C177F-659D-6908-D629-673250C7DA4E}" name="Oneshots">
+            <GROUP id="{FF6159FF-CA7C-CF32-CDF1-47025CC447FA}" name="Knob_big">
+              <FILE id="pCyEsb" name="Knob_big__0000.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0000.png"/>
+              <FILE id="Aj4IQf" name="Knob_big__0001.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0001.png"/>
+              <FILE id="HEBpaa" name="Knob_big__0002.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0002.png"/>
+              <FILE id="H8QqUq" name="Knob_big__0003.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0003.png"/>
+              <FILE id="SMfI4b" name="Knob_big__0004.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0004.png"/>
+              <FILE id="hIGSou" name="Knob_big__0005.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0005.png"/>
+              <FILE id="skltWe" name="Knob_big__0006.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0006.png"/>
+              <FILE id="zIBz2S" name="Knob_big__0007.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0007.png"/>
+              <FILE id="KumNzE" name="Knob_big__0008.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0008.png"/>
+              <FILE id="gCNDuT" name="Knob_big__0009.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0009.png"/>
+              <FILE id="dKFcUA" name="Knob_big__0010.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0010.png"/>
+              <FILE id="ILkxf0" name="Knob_big__0011.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0011.png"/>
+              <FILE id="D9yA1G" name="Knob_big__0012.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0012.png"/>
+              <FILE id="hST6uG" name="Knob_big__0013.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0013.png"/>
+              <FILE id="vWjKFI" name="Knob_big__0014.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0014.png"/>
+              <FILE id="XKEUUK" name="Knob_big__0015.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0015.png"/>
+              <FILE id="Zqk7Te" name="Knob_big__0016.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0016.png"/>
+              <FILE id="xhnhI0" name="Knob_big__0017.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0017.png"/>
+              <FILE id="sfjc0p" name="Knob_big__0018.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0018.png"/>
+              <FILE id="z0BrX6" name="Knob_big__0019.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0019.png"/>
+              <FILE id="T5q21M" name="Knob_big__0020.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0020.png"/>
+              <FILE id="s2YAa1" name="Knob_big__0021.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0021.png"/>
+              <FILE id="rscaMg" name="Knob_big__0022.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0022.png"/>
+              <FILE id="SHJjLm" name="Knob_big__0023.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0023.png"/>
+              <FILE id="xidneV" name="Knob_big__0024.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0024.png"/>
+              <FILE id="fr4HLd" name="Knob_big__0025.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0025.png"/>
+              <FILE id="WraTqe" name="Knob_big__0026.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0026.png"/>
+              <FILE id="VRSLw4" name="Knob_big__0027.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0027.png"/>
+              <FILE id="CG8BFy" name="Knob_big__0028.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0028.png"/>
+              <FILE id="RY3eYn" name="Knob_big__0029.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0029.png"/>
+              <FILE id="nuKnxR" name="Knob_big__0030.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0030.png"/>
+              <FILE id="aR2Sho" name="Knob_big__0031.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0031.png"/>
+              <FILE id="lRuu0q" name="Knob_big__0032.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0032.png"/>
+              <FILE id="UGOfYk" name="Knob_big__0033.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0033.png"/>
+              <FILE id="M7uhek" name="Knob_big__0034.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0034.png"/>
+              <FILE id="HUvaN2" name="Knob_big__0035.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0035.png"/>
+              <FILE id="RGNjmF" name="Knob_big__0036.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0036.png"/>
+              <FILE id="RX1rKD" name="Knob_big__0037.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0037.png"/>
+              <FILE id="bv2UY9" name="Knob_big__0038.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0038.png"/>
+              <FILE id="O3xAte" name="Knob_big__0039.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0039.png"/>
+              <FILE id="CojFAz" name="Knob_big__0040.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0040.png"/>
+              <FILE id="EKbgFB" name="Knob_big__0041.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0041.png"/>
+              <FILE id="ej6C82" name="Knob_big__0042.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0042.png"/>
+              <FILE id="WPCB6b" name="Knob_big__0043.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0043.png"/>
+              <FILE id="wVl76u" name="Knob_big__0044.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0044.png"/>
+              <FILE id="VAjz59" name="Knob_big__0045.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0045.png"/>
+              <FILE id="g2ioeB" name="Knob_big__0046.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0046.png"/>
+              <FILE id="uBQxEK" name="Knob_big__0047.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0047.png"/>
+              <FILE id="aRwD3u" name="Knob_big__0048.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0048.png"/>
+              <FILE id="YA9nMm" name="Knob_big__0049.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0049.png"/>
+              <FILE id="TemeDe" name="Knob_big__0050.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0050.png"/>
+              <FILE id="brtBJa" name="Knob_big__0051.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0051.png"/>
+              <FILE id="zsJ00F" name="Knob_big__0052.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0052.png"/>
+              <FILE id="jZZYe8" name="Knob_big__0053.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0053.png"/>
+              <FILE id="p48aCV" name="Knob_big__0054.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0054.png"/>
+              <FILE id="yMWT5E" name="Knob_big__0055.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0055.png"/>
+              <FILE id="r0BSwa" name="Knob_big__0056.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0056.png"/>
+              <FILE id="WVwDeq" name="Knob_big__0057.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0057.png"/>
+              <FILE id="SMi8At" name="Knob_big__0058.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0058.png"/>
+              <FILE id="zV0bc0" name="Knob_big__0059.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0059.png"/>
+              <FILE id="hP24AK" name="Knob_big__0060.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0060.png"/>
+              <FILE id="Cxq11w" name="Knob_big__0061.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0061.png"/>
+              <FILE id="sKQRsX" name="Knob_big__0062.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0062.png"/>
+              <FILE id="s5Matv" name="Knob_big__0063.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0063.png"/>
+              <FILE id="OMXQeA" name="Knob_big__0064.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0064.png"/>
+              <FILE id="m37vlt" name="Knob_big__0065.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0065.png"/>
+              <FILE id="id9BTy" name="Knob_big__0066.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0066.png"/>
+              <FILE id="S1iW5z" name="Knob_big__0067.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0067.png"/>
+              <FILE id="fDg4lW" name="Knob_big__0068.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0068.png"/>
+              <FILE id="OTpN6z" name="Knob_big__0069.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0069.png"/>
+              <FILE id="qlhLS5" name="Knob_big__0070.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0070.png"/>
+              <FILE id="QpoBvR" name="Knob_big__0071.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0071.png"/>
+              <FILE id="wHEUyB" name="Knob_big__0072.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0072.png"/>
+              <FILE id="qATszL" name="Knob_big__0073.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0073.png"/>
+              <FILE id="mZThxp" name="Knob_big__0074.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0074.png"/>
+              <FILE id="n4t8ZI" name="Knob_big__0075.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0075.png"/>
+              <FILE id="KrwBhQ" name="Knob_big__0076.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0076.png"/>
+              <FILE id="YfJiM4" name="Knob_big__0077.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0077.png"/>
+              <FILE id="J3PAkc" name="Knob_big__0078.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0078.png"/>
+              <FILE id="MT0dHB" name="Knob_big__0079.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0079.png"/>
+              <FILE id="u7d0PC" name="Knob_big__0080.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0080.png"/>
+              <FILE id="ySzPZT" name="Knob_big__0081.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0081.png"/>
+              <FILE id="EyzXK9" name="Knob_big__0082.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0082.png"/>
+              <FILE id="vukF9j" name="Knob_big__0083.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0083.png"/>
+              <FILE id="iRiCPN" name="Knob_big__0084.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0084.png"/>
+              <FILE id="kHVRvR" name="Knob_big__0085.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0085.png"/>
+              <FILE id="NmoAQa" name="Knob_big__0086.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0086.png"/>
+              <FILE id="kPguIN" name="Knob_big__0087.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0087.png"/>
+              <FILE id="ReqUKV" name="Knob_big__0088.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0088.png"/>
+              <FILE id="k8cPYZ" name="Knob_big__0089.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0089.png"/>
+              <FILE id="KVJvdX" name="Knob_big__0090.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0090.png"/>
+              <FILE id="pfa8MM" name="Knob_big__0091.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0091.png"/>
+              <FILE id="wfwru0" name="Knob_big__0092.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0092.png"/>
+              <FILE id="tqyCCk" name="Knob_big__0093.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0093.png"/>
+              <FILE id="NT1DqR" name="Knob_big__0094.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0094.png"/>
+              <FILE id="RLwRWR" name="Knob_big__0095.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0095.png"/>
+              <FILE id="nCRaWc" name="Knob_big__0096.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0096.png"/>
+              <FILE id="e9GCCm" name="Knob_big__0097.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0097.png"/>
+              <FILE id="OreKJc" name="Knob_big__0098.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0098.png"/>
+              <FILE id="Hd2BLd" name="Knob_big__0099.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0099.png"/>
+              <FILE id="FebeME" name="Knob_big__0100.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0100.png"/>
+              <FILE id="WZ7scn" name="Knob_big__0101.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0101.png"/>
+              <FILE id="fbd8xv" name="Knob_big__0102.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0102.png"/>
+              <FILE id="Keylr9" name="Knob_big__0103.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0103.png"/>
+              <FILE id="zJDTis" name="Knob_big__0104.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0104.png"/>
+              <FILE id="jTcw7a" name="Knob_big__0105.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0105.png"/>
+              <FILE id="bORE6B" name="Knob_big__0106.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0106.png"/>
+              <FILE id="X0rElR" name="Knob_big__0107.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0107.png"/>
+              <FILE id="TJy0bc" name="Knob_big__0108.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0108.png"/>
+              <FILE id="ykYORG" name="Knob_big__0109.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0109.png"/>
+              <FILE id="wgeFhw" name="Knob_big__0110.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0110.png"/>
+              <FILE id="d4aM3K" name="Knob_big__0111.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0111.png"/>
+              <FILE id="v3zwQl" name="Knob_big__0112.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0112.png"/>
+              <FILE id="kYpSuF" name="Knob_big__0113.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0113.png"/>
+              <FILE id="NWNUmz" name="Knob_big__0114.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0114.png"/>
+              <FILE id="d2l6xq" name="Knob_big__0115.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0115.png"/>
+              <FILE id="N0R5rP" name="Knob_big__0116.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0116.png"/>
+              <FILE id="hAlcVw" name="Knob_big__0117.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0117.png"/>
+              <FILE id="usHmJ4" name="Knob_big__0118.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0118.png"/>
+              <FILE id="Jt46Su" name="Knob_big__0119.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0119.png"/>
+              <FILE id="I4viEp" name="Knob_big__0120.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0120.png"/>
+              <FILE id="E6B1Wz" name="Knob_big__0121.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0121.png"/>
+              <FILE id="AWmj5z" name="Knob_big__0122.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0122.png"/>
+              <FILE id="xiIHh2" name="Knob_big__0123.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0123.png"/>
+              <FILE id="Rd1kGp" name="Knob_big__0124.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0124.png"/>
+              <FILE id="AlVzKA" name="Knob_big__0125.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0125.png"/>
+              <FILE id="NRmd5h" name="Knob_big__0126.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0126.png"/>
+              <FILE id="V4dqT2" name="Knob_big__0127.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0127.png"/>
+              <FILE id="oaSE7G" name="Knob_big__0128.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0128.png"/>
+              <FILE id="h6oHhC" name="Knob_big__0129.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0129.png"/>
+              <FILE id="naEJcH" name="Knob_big__0130.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0130.png"/>
+              <FILE id="ib7O5K" name="Knob_big__0131.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0131.png"/>
+              <FILE id="ERP6c2" name="Knob_big__0132.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0132.png"/>
+              <FILE id="dIp1GF" name="Knob_big__0133.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0133.png"/>
+              <FILE id="B1Q2gC" name="Knob_big__0134.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0134.png"/>
+              <FILE id="pGSEKH" name="Knob_big__0135.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0135.png"/>
+              <FILE id="MBKIYi" name="Knob_big__0136.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0136.png"/>
+              <FILE id="etf5PJ" name="Knob_big__0137.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0137.png"/>
+              <FILE id="pp4VzM" name="Knob_big__0138.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0138.png"/>
+              <FILE id="KVSylH" name="Knob_big__0139.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0139.png"/>
+              <FILE id="k0BVHY" name="Knob_big__0140.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0140.png"/>
+              <FILE id="JV2KCv" name="Knob_big__0141.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0141.png"/>
+              <FILE id="BS4Uu7" name="Knob_big__0142.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0142.png"/>
+              <FILE id="iBQMZr" name="Knob_big__0143.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0143.png"/>
+              <FILE id="rkSyXW" name="Knob_big__0144.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0144.png"/>
+              <FILE id="W0JUZ4" name="Knob_big__0145.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0145.png"/>
+              <FILE id="T61PRe" name="Knob_big__0146.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0146.png"/>
+              <FILE id="hpCDpq" name="Knob_big__0147.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0147.png"/>
+              <FILE id="NmSksJ" name="Knob_big__0148.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0148.png"/>
+              <FILE id="srHiLT" name="Knob_big__0149.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0149.png"/>
+              <FILE id="DhOIgq" name="Knob_big__0150.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0150.png"/>
+              <FILE id="fhE5TP" name="Knob_big__0151.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0151.png"/>
+              <FILE id="nJLqn5" name="Knob_big__0152.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0152.png"/>
+              <FILE id="yKirn7" name="Knob_big__0153.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0153.png"/>
+              <FILE id="nlPQWG" name="Knob_big__0154.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0154.png"/>
+              <FILE id="iIpboM" name="Knob_big__0155.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0155.png"/>
+              <FILE id="mInhCI" name="Knob_big__0156.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0156.png"/>
+              <FILE id="UrnTIz" name="Knob_big__0157.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0157.png"/>
+              <FILE id="LEfe48" name="Knob_big__0158.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0158.png"/>
+              <FILE id="tpN2HP" name="Knob_big__0159.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0159.png"/>
+              <FILE id="G48ADG" name="Knob_big__0160.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0160.png"/>
+              <FILE id="lSBS3d" name="Knob_big__0161.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0161.png"/>
+              <FILE id="VrcIx4" name="Knob_big__0162.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0162.png"/>
+              <FILE id="O6yt0M" name="Knob_big__0163.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0163.png"/>
+              <FILE id="bBpApI" name="Knob_big__0164.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0164.png"/>
+              <FILE id="gnUOUw" name="Knob_big__0165.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0165.png"/>
+              <FILE id="aQFO4U" name="Knob_big__0166.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0166.png"/>
+              <FILE id="bP90hB" name="Knob_big__0167.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0167.png"/>
+              <FILE id="EdGV7l" name="Knob_big__0168.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0168.png"/>
+              <FILE id="yNPXo2" name="Knob_big__0169.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0169.png"/>
+              <FILE id="oWi5oF" name="Knob_big__0170.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0170.png"/>
+              <FILE id="mKrKZB" name="Knob_big__0171.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0171.png"/>
+              <FILE id="daffPo" name="Knob_big__0172.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0172.png"/>
+              <FILE id="m3etjW" name="Knob_big__0173.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0173.png"/>
+              <FILE id="CQKaas" name="Knob_big__0174.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0174.png"/>
+              <FILE id="kQLxWl" name="Knob_big__0175.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0175.png"/>
+              <FILE id="bVyYN6" name="Knob_big__0176.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0176.png"/>
+              <FILE id="KiAdeP" name="Knob_big__0177.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0177.png"/>
+              <FILE id="OLVUJX" name="Knob_big__0178.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0178.png"/>
+              <FILE id="TPnEfX" name="Knob_big__0179.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0179.png"/>
+              <FILE id="EBLVUz" name="Knob_big__0180.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0180.png"/>
+              <FILE id="l16wVY" name="Knob_big__0181.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0181.png"/>
+              <FILE id="emEhoD" name="Knob_big__0182.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0182.png"/>
+              <FILE id="aUEE6X" name="Knob_big__0183.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0183.png"/>
+              <FILE id="SOp0tV" name="Knob_big__0184.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0184.png"/>
+              <FILE id="wWeyjr" name="Knob_big__0185.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0185.png"/>
+              <FILE id="XxXBBy" name="Knob_big__0186.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0186.png"/>
+              <FILE id="jMebFe" name="Knob_big__0187.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0187.png"/>
+              <FILE id="S2yROx" name="Knob_big__0188.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0188.png"/>
+              <FILE id="uX06dv" name="Knob_big__0189.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0189.png"/>
+              <FILE id="XPfcBR" name="Knob_big__0190.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0190.png"/>
+              <FILE id="RORKpA" name="Knob_big__0191.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0191.png"/>
+              <FILE id="Uhgmcl" name="Knob_big__0192.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0192.png"/>
+              <FILE id="eC6w5q" name="Knob_big__0193.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0193.png"/>
+              <FILE id="MQlYVb" name="Knob_big__0194.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0194.png"/>
+              <FILE id="g7XEuy" name="Knob_big__0195.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0195.png"/>
+              <FILE id="HG07EW" name="Knob_big__0196.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0196.png"/>
+              <FILE id="sYJzmv" name="Knob_big__0197.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0197.png"/>
+              <FILE id="Wp3Fbn" name="Knob_big__0198.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0198.png"/>
+              <FILE id="SGWjan" name="Knob_big__0199.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0199.png"/>
+              <FILE id="IxNZwT" name="Knob_big__0200.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0200.png"/>
+              <FILE id="YxTJni" name="Knob_big__0201.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0201.png"/>
+              <FILE id="PhqdJ8" name="Knob_big__0202.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0202.png"/>
+              <FILE id="v8FXL7" name="Knob_big__0203.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0203.png"/>
+              <FILE id="xfxDsS" name="Knob_big__0204.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0204.png"/>
+              <FILE id="ELctnp" name="Knob_big__0205.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0205.png"/>
+              <FILE id="VJT9w4" name="Knob_big__0206.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0206.png"/>
+              <FILE id="gTR6bR" name="Knob_big__0207.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0207.png"/>
+              <FILE id="cjikry" name="Knob_big__0208.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0208.png"/>
+              <FILE id="ZGoEzc" name="Knob_big__0209.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0209.png"/>
+              <FILE id="Z1CfKB" name="Knob_big__0210.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0210.png"/>
+              <FILE id="Iz22Wl" name="Knob_big__0211.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0211.png"/>
+              <FILE id="jrlznr" name="Knob_big__0212.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0212.png"/>
+              <FILE id="LbEKfC" name="Knob_big__0213.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0213.png"/>
+              <FILE id="NpoNr0" name="Knob_big__0214.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0214.png"/>
+              <FILE id="cHUGUk" name="Knob_big__0215.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0215.png"/>
+              <FILE id="FQUkhS" name="Knob_big__0216.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0216.png"/>
+              <FILE id="W5WHO4" name="Knob_big__0217.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0217.png"/>
+              <FILE id="k1rwTx" name="Knob_big__0218.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0218.png"/>
+              <FILE id="i99rU1" name="Knob_big__0219.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0219.png"/>
+              <FILE id="vy6mfo" name="Knob_big__0220.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0220.png"/>
+              <FILE id="iFTcXD" name="Knob_big__0221.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0221.png"/>
+              <FILE id="LUrSBV" name="Knob_big__0222.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0222.png"/>
+              <FILE id="gUJAgU" name="Knob_big__0223.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0223.png"/>
+              <FILE id="hPIShc" name="Knob_big__0224.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0224.png"/>
+              <FILE id="mOdZ3Z" name="Knob_big__0225.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0225.png"/>
+              <FILE id="doZ0Ri" name="Knob_big__0226.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0226.png"/>
+              <FILE id="mPDDT0" name="Knob_big__0227.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0227.png"/>
+              <FILE id="GTUx9x" name="Knob_big__0228.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0228.png"/>
+              <FILE id="N8hCSM" name="Knob_big__0229.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0229.png"/>
+              <FILE id="Y8r0bv" name="Knob_big__0230.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0230.png"/>
+              <FILE id="i4QnGr" name="Knob_big__0231.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0231.png"/>
+              <FILE id="sOcEcj" name="Knob_big__0232.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0232.png"/>
+              <FILE id="vBjpC0" name="Knob_big__0233.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0233.png"/>
+              <FILE id="MZ8rsv" name="Knob_big__0234.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0234.png"/>
+              <FILE id="rrn0Jg" name="Knob_big__0235.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0235.png"/>
+              <FILE id="ZvAbaa" name="Knob_big__0236.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0236.png"/>
+              <FILE id="AGogQ7" name="Knob_big__0237.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0237.png"/>
+              <FILE id="oTV3dS" name="Knob_big__0238.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0238.png"/>
+              <FILE id="Wyeye9" name="Knob_big__0239.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0239.png"/>
+              <FILE id="m9JLag" name="Knob_big__0240.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0240.png"/>
+              <FILE id="XWEBBk" name="Knob_big__0241.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0241.png"/>
+              <FILE id="p3BYR2" name="Knob_big__0242.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0242.png"/>
+              <FILE id="VJYe4d" name="Knob_big__0243.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0243.png"/>
+              <FILE id="b6CQvg" name="Knob_big__0244.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0244.png"/>
+              <FILE id="UVP5WZ" name="Knob_big__0245.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0245.png"/>
+              <FILE id="sp9gkO" name="Knob_big__0246.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0246.png"/>
+              <FILE id="WhcuU4" name="Knob_big__0247.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0247.png"/>
+              <FILE id="kTtWyc" name="Knob_big__0248.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0248.png"/>
+              <FILE id="coRgaG" name="Knob_big__0249.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0249.png"/>
+              <FILE id="ofgKQ1" name="Knob_big__0250.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0250.png"/>
+              <FILE id="UpxwYg" name="Knob_big__0251.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0251.png"/>
+              <FILE id="UMCINN" name="Knob_big__0252.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0252.png"/>
+              <FILE id="iMs7DD" name="Knob_big__0253.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0253.png"/>
+              <FILE id="sSo2Lz" name="Knob_big__0254.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0254.png"/>
+              <FILE id="QbUYuD" name="Knob_big__0255.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0255.png"/>
+              <FILE id="xDUx1V" name="Knob_big__0256.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_big/Knob_big__0256.png"/>
+            </GROUP>
+            <GROUP id="{E468B336-7491-E37E-BA38-CF621FD278B8}" name="Knob_middle">
+              <FILE id="IrwMBK" name="Knob_middle_0000.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0000.png"/>
+              <FILE id="VbCOyo" name="Knob_middle_0001.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0001.png"/>
+              <FILE id="CraOwU" name="Knob_middle_0002.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0002.png"/>
+              <FILE id="UNbspW" name="Knob_middle_0003.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0003.png"/>
+              <FILE id="trI0m6" name="Knob_middle_0004.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0004.png"/>
+              <FILE id="AQd5MT" name="Knob_middle_0005.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0005.png"/>
+              <FILE id="uzuVTf" name="Knob_middle_0006.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0006.png"/>
+              <FILE id="L7vYAs" name="Knob_middle_0007.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0007.png"/>
+              <FILE id="SHfmqB" name="Knob_middle_0008.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0008.png"/>
+              <FILE id="YIUK3j" name="Knob_middle_0009.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0009.png"/>
+              <FILE id="asHcZa" name="Knob_middle_0010.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0010.png"/>
+              <FILE id="vcpvNw" name="Knob_middle_0011.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0011.png"/>
+              <FILE id="hNFjxz" name="Knob_middle_0012.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0012.png"/>
+              <FILE id="LN5jqu" name="Knob_middle_0013.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0013.png"/>
+              <FILE id="ZrqWjR" name="Knob_middle_0014.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0014.png"/>
+              <FILE id="UzKpov" name="Knob_middle_0015.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0015.png"/>
+              <FILE id="YWyd49" name="Knob_middle_0016.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0016.png"/>
+              <FILE id="IkNzUy" name="Knob_middle_0017.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0017.png"/>
+              <FILE id="Zn2FxE" name="Knob_middle_0018.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0018.png"/>
+              <FILE id="LcktRP" name="Knob_middle_0019.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0019.png"/>
+              <FILE id="reh83i" name="Knob_middle_0020.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0020.png"/>
+              <FILE id="R3vt5F" name="Knob_middle_0021.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0021.png"/>
+              <FILE id="lJSYiX" name="Knob_middle_0022.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0022.png"/>
+              <FILE id="GPi8ZO" name="Knob_middle_0023.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0023.png"/>
+              <FILE id="uQmLK5" name="Knob_middle_0024.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0024.png"/>
+              <FILE id="EquFxV" name="Knob_middle_0025.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0025.png"/>
+              <FILE id="tvyjBN" name="Knob_middle_0026.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0026.png"/>
+              <FILE id="odtNwh" name="Knob_middle_0027.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0027.png"/>
+              <FILE id="dTpRQo" name="Knob_middle_0028.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0028.png"/>
+              <FILE id="HSxjbA" name="Knob_middle_0029.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0029.png"/>
+              <FILE id="hS0ngW" name="Knob_middle_0030.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0030.png"/>
+              <FILE id="ttdROd" name="Knob_middle_0031.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0031.png"/>
+              <FILE id="KbPvQd" name="Knob_middle_0032.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0032.png"/>
+              <FILE id="BmRAh0" name="Knob_middle_0033.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0033.png"/>
+              <FILE id="TPe6Hc" name="Knob_middle_0034.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0034.png"/>
+              <FILE id="zyWXve" name="Knob_middle_0035.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0035.png"/>
+              <FILE id="yyImOF" name="Knob_middle_0036.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0036.png"/>
+              <FILE id="pTTs3I" name="Knob_middle_0037.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0037.png"/>
+              <FILE id="XCo67T" name="Knob_middle_0038.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0038.png"/>
+              <FILE id="HKCx2W" name="Knob_middle_0039.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0039.png"/>
+              <FILE id="k5239l" name="Knob_middle_0040.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0040.png"/>
+              <FILE id="eo7Cwn" name="Knob_middle_0041.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0041.png"/>
+              <FILE id="xjMwRg" name="Knob_middle_0042.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0042.png"/>
+              <FILE id="UksGFv" name="Knob_middle_0043.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0043.png"/>
+              <FILE id="lvzSEG" name="Knob_middle_0044.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0044.png"/>
+              <FILE id="dFK9rr" name="Knob_middle_0045.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0045.png"/>
+              <FILE id="EDP1CQ" name="Knob_middle_0046.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0046.png"/>
+              <FILE id="qHtAVc" name="Knob_middle_0047.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0047.png"/>
+              <FILE id="L15Xhc" name="Knob_middle_0048.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0048.png"/>
+              <FILE id="V9pCd7" name="Knob_middle_0049.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0049.png"/>
+              <FILE id="Mo0woA" name="Knob_middle_0050.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0050.png"/>
+              <FILE id="EVA3wa" name="Knob_middle_0051.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0051.png"/>
+              <FILE id="GZ95Q4" name="Knob_middle_0052.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0052.png"/>
+              <FILE id="fswpii" name="Knob_middle_0053.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0053.png"/>
+              <FILE id="n2tvUR" name="Knob_middle_0054.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0054.png"/>
+              <FILE id="X3tRyW" name="Knob_middle_0055.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0055.png"/>
+              <FILE id="ktzaFz" name="Knob_middle_0056.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0056.png"/>
+              <FILE id="FISjFm" name="Knob_middle_0057.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0057.png"/>
+              <FILE id="FBGvB2" name="Knob_middle_0058.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0058.png"/>
+              <FILE id="SOURRd" name="Knob_middle_0059.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0059.png"/>
+              <FILE id="Ge707R" name="Knob_middle_0060.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0060.png"/>
+              <FILE id="cfE1ZC" name="Knob_middle_0061.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0061.png"/>
+              <FILE id="SSpmPK" name="Knob_middle_0062.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0062.png"/>
+              <FILE id="YpAgnD" name="Knob_middle_0063.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0063.png"/>
+              <FILE id="WGh9Bc" name="Knob_middle_0064.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0064.png"/>
+              <FILE id="Tc7gy3" name="Knob_middle_0065.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0065.png"/>
+              <FILE id="odnqih" name="Knob_middle_0066.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0066.png"/>
+              <FILE id="zKQTmW" name="Knob_middle_0067.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0067.png"/>
+              <FILE id="T7cUL3" name="Knob_middle_0068.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0068.png"/>
+              <FILE id="MKnKCd" name="Knob_middle_0069.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0069.png"/>
+              <FILE id="nUAe2X" name="Knob_middle_0070.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0070.png"/>
+              <FILE id="dyAZ3a" name="Knob_middle_0071.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0071.png"/>
+              <FILE id="cznapG" name="Knob_middle_0072.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0072.png"/>
+              <FILE id="NBKOzY" name="Knob_middle_0073.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0073.png"/>
+              <FILE id="PegAKs" name="Knob_middle_0074.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0074.png"/>
+              <FILE id="HYwmSE" name="Knob_middle_0075.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0075.png"/>
+              <FILE id="jFNeYL" name="Knob_middle_0076.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0076.png"/>
+              <FILE id="UfJxhI" name="Knob_middle_0077.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0077.png"/>
+              <FILE id="lZwO7i" name="Knob_middle_0078.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0078.png"/>
+              <FILE id="Py3qgj" name="Knob_middle_0079.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0079.png"/>
+              <FILE id="S3S47B" name="Knob_middle_0080.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0080.png"/>
+              <FILE id="IC8bCq" name="Knob_middle_0081.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0081.png"/>
+              <FILE id="FR2jhR" name="Knob_middle_0082.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0082.png"/>
+              <FILE id="SEJWX0" name="Knob_middle_0083.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0083.png"/>
+              <FILE id="guVgQM" name="Knob_middle_0084.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0084.png"/>
+              <FILE id="yB6cNp" name="Knob_middle_0085.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0085.png"/>
+              <FILE id="F2YTAp" name="Knob_middle_0086.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0086.png"/>
+              <FILE id="Z0ak6o" name="Knob_middle_0087.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0087.png"/>
+              <FILE id="nU7kas" name="Knob_middle_0088.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0088.png"/>
+              <FILE id="mBId7i" name="Knob_middle_0089.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0089.png"/>
+              <FILE id="IDApfz" name="Knob_middle_0090.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0090.png"/>
+              <FILE id="zHeMf4" name="Knob_middle_0091.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0091.png"/>
+              <FILE id="LRsCVJ" name="Knob_middle_0092.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0092.png"/>
+              <FILE id="PfGuwG" name="Knob_middle_0093.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0093.png"/>
+              <FILE id="FXgwMq" name="Knob_middle_0094.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0094.png"/>
+              <FILE id="g9nKir" name="Knob_middle_0095.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0095.png"/>
+              <FILE id="PPuf5H" name="Knob_middle_0096.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0096.png"/>
+              <FILE id="HvFmOO" name="Knob_middle_0097.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0097.png"/>
+              <FILE id="ktpO7s" name="Knob_middle_0098.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0098.png"/>
+              <FILE id="eePwR6" name="Knob_middle_0099.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0099.png"/>
+              <FILE id="kyNdFi" name="Knob_middle_0100.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0100.png"/>
+              <FILE id="dlXufQ" name="Knob_middle_0101.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0101.png"/>
+              <FILE id="LToHQi" name="Knob_middle_0102.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0102.png"/>
+              <FILE id="iNUdMm" name="Knob_middle_0103.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0103.png"/>
+              <FILE id="hhAEBk" name="Knob_middle_0104.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0104.png"/>
+              <FILE id="CQjcgO" name="Knob_middle_0105.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0105.png"/>
+              <FILE id="zS9uVW" name="Knob_middle_0106.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0106.png"/>
+              <FILE id="FSOLcI" name="Knob_middle_0107.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0107.png"/>
+              <FILE id="seJX4h" name="Knob_middle_0108.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0108.png"/>
+              <FILE id="RIchWW" name="Knob_middle_0109.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0109.png"/>
+              <FILE id="zqXNz7" name="Knob_middle_0110.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0110.png"/>
+              <FILE id="yPROoK" name="Knob_middle_0111.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0111.png"/>
+              <FILE id="qYEGzb" name="Knob_middle_0112.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0112.png"/>
+              <FILE id="MD392g" name="Knob_middle_0113.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0113.png"/>
+              <FILE id="bJ0gAG" name="Knob_middle_0114.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0114.png"/>
+              <FILE id="o1ve2n" name="Knob_middle_0115.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0115.png"/>
+              <FILE id="BKtP88" name="Knob_middle_0116.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0116.png"/>
+              <FILE id="uflzft" name="Knob_middle_0117.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0117.png"/>
+              <FILE id="IgXBNn" name="Knob_middle_0118.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0118.png"/>
+              <FILE id="Ckcy8D" name="Knob_middle_0119.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0119.png"/>
+              <FILE id="j9bFwW" name="Knob_middle_0120.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0120.png"/>
+              <FILE id="G79LzR" name="Knob_middle_0121.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0121.png"/>
+              <FILE id="cqWgxl" name="Knob_middle_0122.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0122.png"/>
+              <FILE id="wsK920" name="Knob_middle_0123.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0123.png"/>
+              <FILE id="TKGpPD" name="Knob_middle_0124.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0124.png"/>
+              <FILE id="BUvhuV" name="Knob_middle_0125.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0125.png"/>
+              <FILE id="zNjiOE" name="Knob_middle_0126.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0126.png"/>
+              <FILE id="QW53vE" name="Knob_middle_0127.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0127.png"/>
+              <FILE id="wurADv" name="Knob_middle_0128.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_middle/Knob_middle_0128.png"/>
+            </GROUP>
+            <GROUP id="{67BB7918-9A66-C188-B241-2BC4007D3665}" name="Knob_small">
+              <FILE id="MFxqSM" name="Knob_small_0000.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0000.png"/>
+              <FILE id="GVYF6s" name="Knob_small_0001.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0001.png"/>
+              <FILE id="R7SUPy" name="Knob_small_0002.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0002.png"/>
+              <FILE id="VFR7WM" name="Knob_small_0003.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0003.png"/>
+              <FILE id="ftjBIr" name="Knob_small_0004.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0004.png"/>
+              <FILE id="hoZzt9" name="Knob_small_0005.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0005.png"/>
+              <FILE id="xJpm0G" name="Knob_small_0006.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0006.png"/>
+              <FILE id="a8xpO3" name="Knob_small_0007.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0007.png"/>
+              <FILE id="cnrPiQ" name="Knob_small_0008.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0008.png"/>
+              <FILE id="sdjYkf" name="Knob_small_0009.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0009.png"/>
+              <FILE id="CXVxur" name="Knob_small_0010.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0010.png"/>
+              <FILE id="e4YsTN" name="Knob_small_0011.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0011.png"/>
+              <FILE id="yKGb7x" name="Knob_small_0012.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0012.png"/>
+              <FILE id="OLl9GT" name="Knob_small_0013.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0013.png"/>
+              <FILE id="ERDYc5" name="Knob_small_0014.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0014.png"/>
+              <FILE id="bMkgdz" name="Knob_small_0015.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0015.png"/>
+              <FILE id="bfTtn0" name="Knob_small_0016.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0016.png"/>
+              <FILE id="Hd55WK" name="Knob_small_0017.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0017.png"/>
+              <FILE id="dEBDKo" name="Knob_small_0018.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0018.png"/>
+              <FILE id="WdHbF3" name="Knob_small_0019.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0019.png"/>
+              <FILE id="kq0Y0x" name="Knob_small_0020.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0020.png"/>
+              <FILE id="Lov4tw" name="Knob_small_0021.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0021.png"/>
+              <FILE id="KNMjb6" name="Knob_small_0022.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0022.png"/>
+              <FILE id="h7t5Az" name="Knob_small_0023.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0023.png"/>
+              <FILE id="b1lfNq" name="Knob_small_0024.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0024.png"/>
+              <FILE id="l1CYoa" name="Knob_small_0025.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0025.png"/>
+              <FILE id="dxgOl9" name="Knob_small_0026.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0026.png"/>
+              <FILE id="uWnVKT" name="Knob_small_0027.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0027.png"/>
+              <FILE id="Alhu69" name="Knob_small_0028.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0028.png"/>
+              <FILE id="GSbPPQ" name="Knob_small_0029.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0029.png"/>
+              <FILE id="o0P96Q" name="Knob_small_0030.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0030.png"/>
+              <FILE id="gwVLP7" name="Knob_small_0031.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0031.png"/>
+              <FILE id="QaC86T" name="Knob_small_0032.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0032.png"/>
+              <FILE id="GMFE1l" name="Knob_small_0033.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0033.png"/>
+              <FILE id="j2WC9U" name="Knob_small_0034.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0034.png"/>
+              <FILE id="piK6TR" name="Knob_small_0035.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0035.png"/>
+              <FILE id="kYqmgL" name="Knob_small_0036.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0036.png"/>
+              <FILE id="E5NRzU" name="Knob_small_0037.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0037.png"/>
+              <FILE id="CGwksz" name="Knob_small_0038.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0038.png"/>
+              <FILE id="yn9G1x" name="Knob_small_0039.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0039.png"/>
+              <FILE id="WsX4v5" name="Knob_small_0040.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0040.png"/>
+              <FILE id="PIJwbl" name="Knob_small_0041.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0041.png"/>
+              <FILE id="ZpFERS" name="Knob_small_0042.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0042.png"/>
+              <FILE id="nXIDUk" name="Knob_small_0043.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0043.png"/>
+              <FILE id="Tzc6dS" name="Knob_small_0044.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0044.png"/>
+              <FILE id="Fzhq8M" name="Knob_small_0045.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0045.png"/>
+              <FILE id="xwfCn2" name="Knob_small_0046.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0046.png"/>
+              <FILE id="qDG3DJ" name="Knob_small_0047.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0047.png"/>
+              <FILE id="EQdNHI" name="Knob_small_0048.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0048.png"/>
+              <FILE id="ycXY3m" name="Knob_small_0049.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0049.png"/>
+              <FILE id="TRgVAn" name="Knob_small_0050.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0050.png"/>
+              <FILE id="nIWMej" name="Knob_small_0051.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0051.png"/>
+              <FILE id="UoUtdn" name="Knob_small_0052.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0052.png"/>
+              <FILE id="n7CL5C" name="Knob_small_0053.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0053.png"/>
+              <FILE id="KRrfPp" name="Knob_small_0054.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0054.png"/>
+              <FILE id="ai1rxI" name="Knob_small_0055.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0055.png"/>
+              <FILE id="Fsopj2" name="Knob_small_0056.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0056.png"/>
+              <FILE id="iyifPV" name="Knob_small_0057.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0057.png"/>
+              <FILE id="mvvK1J" name="Knob_small_0058.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0058.png"/>
+              <FILE id="pbJTBl" name="Knob_small_0059.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0059.png"/>
+              <FILE id="HvfOgY" name="Knob_small_0060.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0060.png"/>
+              <FILE id="vAKTpy" name="Knob_small_0061.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0061.png"/>
+              <FILE id="dMHiYp" name="Knob_small_0062.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0062.png"/>
+              <FILE id="sAObbV" name="Knob_small_0063.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0063.png"/>
+              <FILE id="RoSvAk" name="Knob_small_0064.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0064.png"/>
+              <FILE id="kY2JZ6" name="Knob_small_0065.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0065.png"/>
+              <FILE id="SLoEjr" name="Knob_small_0066.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0066.png"/>
+              <FILE id="wIovdf" name="Knob_small_0067.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0067.png"/>
+              <FILE id="gfzpRW" name="Knob_small_0068.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0068.png"/>
+              <FILE id="hkYqyu" name="Knob_small_0069.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0069.png"/>
+              <FILE id="LjbP6b" name="Knob_small_0070.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0070.png"/>
+              <FILE id="xwn63U" name="Knob_small_0071.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0071.png"/>
+              <FILE id="olKtAD" name="Knob_small_0072.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0072.png"/>
+              <FILE id="PgaP5k" name="Knob_small_0073.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0073.png"/>
+              <FILE id="cIZb4J" name="Knob_small_0074.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0074.png"/>
+              <FILE id="nOeyMS" name="Knob_small_0075.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0075.png"/>
+              <FILE id="nBJ2rN" name="Knob_small_0076.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0076.png"/>
+              <FILE id="DVhyqK" name="Knob_small_0077.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0077.png"/>
+              <FILE id="EiH1VG" name="Knob_small_0078.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0078.png"/>
+              <FILE id="sOHo0h" name="Knob_small_0079.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0079.png"/>
+              <FILE id="nQ72Wq" name="Knob_small_0080.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0080.png"/>
+              <FILE id="gvAixV" name="Knob_small_0081.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0081.png"/>
+              <FILE id="p343e1" name="Knob_small_0082.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0082.png"/>
+              <FILE id="YRsAZr" name="Knob_small_0083.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0083.png"/>
+              <FILE id="FYabl2" name="Knob_small_0084.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0084.png"/>
+              <FILE id="oEutfT" name="Knob_small_0085.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0085.png"/>
+              <FILE id="LXT4yW" name="Knob_small_0086.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0086.png"/>
+              <FILE id="Nvg6va" name="Knob_small_0087.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0087.png"/>
+              <FILE id="W6WAi3" name="Knob_small_0088.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0088.png"/>
+              <FILE id="EF7GNI" name="Knob_small_0089.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0089.png"/>
+              <FILE id="grZNG9" name="Knob_small_0090.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0090.png"/>
+              <FILE id="GCLbAm" name="Knob_small_0091.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0091.png"/>
+              <FILE id="DsxBs9" name="Knob_small_0092.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0092.png"/>
+              <FILE id="FMPuae" name="Knob_small_0093.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0093.png"/>
+              <FILE id="roBxU2" name="Knob_small_0094.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0094.png"/>
+              <FILE id="WJEW6q" name="Knob_small_0095.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0095.png"/>
+              <FILE id="MG3Opw" name="Knob_small_0096.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0096.png"/>
+              <FILE id="iruXnx" name="Knob_small_0097.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0097.png"/>
+              <FILE id="b1Od2C" name="Knob_small_0098.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0098.png"/>
+              <FILE id="yUO3lS" name="Knob_small_0099.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0099.png"/>
+              <FILE id="yn2IvM" name="Knob_small_0100.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0100.png"/>
+              <FILE id="g9nh0b" name="Knob_small_0101.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0101.png"/>
+              <FILE id="Tapx5V" name="Knob_small_0102.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0102.png"/>
+              <FILE id="LdufvY" name="Knob_small_0103.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0103.png"/>
+              <FILE id="fkCEy4" name="Knob_small_0104.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0104.png"/>
+              <FILE id="UbDAvl" name="Knob_small_0105.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0105.png"/>
+              <FILE id="xVxWEA" name="Knob_small_0106.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0106.png"/>
+              <FILE id="inPsMM" name="Knob_small_0107.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0107.png"/>
+              <FILE id="MjH2O7" name="Knob_small_0108.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0108.png"/>
+              <FILE id="ytJWfz" name="Knob_small_0109.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0109.png"/>
+              <FILE id="Fl9HSi" name="Knob_small_0110.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0110.png"/>
+              <FILE id="Hz2Yod" name="Knob_small_0111.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0111.png"/>
+              <FILE id="C7CNdP" name="Knob_small_0112.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0112.png"/>
+              <FILE id="EaqzqP" name="Knob_small_0113.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0113.png"/>
+              <FILE id="uHBCZH" name="Knob_small_0114.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0114.png"/>
+              <FILE id="syLg7D" name="Knob_small_0115.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0115.png"/>
+              <FILE id="UHV9OY" name="Knob_small_0116.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0116.png"/>
+              <FILE id="zgErEh" name="Knob_small_0117.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0117.png"/>
+              <FILE id="oLGims" name="Knob_small_0118.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0118.png"/>
+              <FILE id="mZitA5" name="Knob_small_0119.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0119.png"/>
+              <FILE id="BFEhCf" name="Knob_small_0120.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0120.png"/>
+              <FILE id="fLpwJ0" name="Knob_small_0121.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0121.png"/>
+              <FILE id="ZrYU94" name="Knob_small_0122.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0122.png"/>
+              <FILE id="qkrmIB" name="Knob_small_0123.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0123.png"/>
+              <FILE id="uM3UGy" name="Knob_small_0124.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0124.png"/>
+              <FILE id="ggNj1h" name="Knob_small_0125.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0125.png"/>
+              <FILE id="tinTad" name="Knob_small_0126.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0126.png"/>
+              <FILE id="C7MGYs" name="Knob_small_0127.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0127.png"/>
+              <FILE id="tZWeL1" name="Knob_small_0128.png" compile="0" resource="1"
+                    file="Assets/Animations/Oneshots/Knob_small/Knob_small_0128.png"/>
+            </GROUP>
+          </GROUP>
+        </GROUP>
+      </GROUP>
     </GROUP>
     <FILE id="CqFw5n" name="AirDelayLogo.png" compile="0" resource="1"
           file="Source/AirDelayLogo.png"/>
